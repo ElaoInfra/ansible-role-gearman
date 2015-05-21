@@ -1,6 +1,6 @@
 ---
 
-- name: services > Start gearman server if not running.
+- name: services > Gearman job server
   service:
     name:    "{{ item }}"
     state:   started
