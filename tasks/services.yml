@@ -1,0 +1,9 @@
+---
+
+- name: services > Start gearman server if not running.
+  service:
+    name:    "{{ item }}"
+    state:   started
+    enabled: yes
+  with_items:
+    - gearman-job-server

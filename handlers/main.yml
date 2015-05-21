@@ -1,0 +1,6 @@
+---
+
+- name: gearman restart
+  service:
+    name:  gearman-job-server
+    state: restarted
